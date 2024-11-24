@@ -16,11 +16,11 @@ metadata:
     #alb.ingress.kubernetes.io/actions.default: >
     #  {"Type": "forward", "ForwardConfig": {"TargetGroups": [{"ServiceName": "ui", "ServicePort": "8080"}]}}
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 8080}]'
-    alb.ingress.kubernetes.io/subnets: subnet-0c98af54fbc8f6bc9, subnet-070b306f154bb9f1e
+    alb.ingress.kubernetes.io/subnets: subnet-0ae7b1b41d5d9d826, subnet-0c7a62ede05cf36c9
 spec:
   ingressClassName: alb
   rules:
-  - host: ui.339712744178.realhandsonlabs.net
+  - host: ui.905418367231.realhandsonlabs.net
     http:
       paths:
       - path: /home
