@@ -13,8 +13,8 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
     alb.ingress.kubernetes.io/scheme: "internet-facing"
-    #alb.ingress.kubernetes.io/actions.default: >
-    #  {"Type": "forward", "ForwardConfig": {"TargetGroups": [{"ServiceName": "ui", "ServicePort": "8080"}]}}
+    alb.ingress.kubernetes.io/actions.default: >
+     {"Type": "forward", "ForwardConfig": {"TargetGroups": [{"ServiceName": "ui", "ServicePort": "8080"}]}}
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 8080}]'
     alb.ingress.kubernetes.io/subnets: subnet-0ae7b1b41d5d9d826, subnet-0c7a62ede05cf36c9
 spec:
