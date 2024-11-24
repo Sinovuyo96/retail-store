@@ -1,6 +1,7 @@
 apiVersion: v1
 kind: ServiceAccount
 metadata:
+  namespace: ui
   name: ui
   labels:
     app.kubernetes.io/name: ui
